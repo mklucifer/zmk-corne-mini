@@ -63,6 +63,43 @@
 
     //
 
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(C))>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(V))>;
+            label = "PASTE";
+        };
+
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "UNDO";
+        };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Y)>;
+            label = "REDO";
+        };
+
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CUT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -130,7 +167,7 @@
         MOUSE {
             display-name = "System";
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans    &kp C_AC_REDO   &kp K_PASTE     &kp C_AC_COPY    &kp C_AC_CUT  &kp C_AC_UNDO    &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &redo           &paste          &copy            &cut          &undo            &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans        &trans        &trans     &trans          &trans    &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans        &trans           &trans
                                     &trans     &trans          &trans    &mkp RCLK       &mkp LCLK       &mkp MCLK
@@ -156,12 +193,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        l3 {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
