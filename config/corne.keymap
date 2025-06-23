@@ -93,9 +93,9 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES           &kp POUND             &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp ASTERISK    &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &trans
-&trans  &hm LGUI PIPE    &hm LSHFT NON_US_BACKSLASH  &hm LALT TILDE        &hm LCTRL SLASH  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hm RCTRL SLASH  &hm RALT TILDE  &hm RSHFT NON_US_BACKSLASH  &hm RGUI PIPE          &trans
-&trans  &trans           &trans                      &kp NON_US_BACKSLASH  &kp TILDE        &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH       &trans                      &trans                 &trans
+&trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES           &kp POUND             &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &trans
+&trans  &hm LGUI TILDE2  &hm LSHFT NON_US_BACKSLASH  &hm LALT PIPE2        &hm LCTRL SLASH  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hm RCTRL SLASH  &hm RALT TILDE2  &hm RSHFT NON_US_BACKSLASH  &hm RGUI PIPE2         &trans
+&trans  &trans           &trans                      &kp NON_US_BACKSLASH  &kp TILDE2       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH        &trans                      &trans                 &trans
                                                      &kp LGUI              &kp SPACE        &kp SINGLE_QUOTE    &trans             &kp BACKSPACE    &kp DEL
             >;
         };
@@ -130,7 +130,7 @@
         MOUSE {
             display-name = "System";
             bindings = <
-&trans  &trans        &trans        &trans     &trans          &trans    &kp K_REDO      &kp K_PASTE     &kp K_COPY       &kp K_CUT     &kp K_UNDO       &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &kp C_AC_REDO   &kp K_PASTE     &kp C_AC_COPY    &kp C_AC_CUT  &kp C_AC_UNDO    &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans        &trans        &trans     &trans          &trans    &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans        &trans           &trans
                                     &trans     &trans          &trans    &mkp RCLK       &mkp LCLK       &mkp MCLK
