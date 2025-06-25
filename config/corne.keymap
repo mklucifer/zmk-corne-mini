@@ -68,35 +68,40 @@
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(C))>;
+            bindings = <&kp LC(LS(C))>, <&macro_tap>;
+
             label = "COPY";
         };
 
         paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(V))>;
+            bindings = <&kp LS(LC(V))>, <&macro_tap>;
+
             label = "PASTE";
         };
 
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(Z)>, <&macro_tap>;
+
             label = "UNDO";
         };
 
         redo: redo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(Y)>;
+            bindings = <&kp LC(Y)>, <&macro_tap>;
+
             label = "REDO";
         };
 
         cut: cut {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(X)>;
+            bindings = <&kp LC(X)>, <&macro_tap>;
+
             label = "CUT";
         };
     };
@@ -133,7 +138,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES           &kp POUND             &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &trans
 &trans  &hm LGUI TILDE2  &hm LSHFT NON_US_BACKSLASH  &hm LALT PIPE2        &hm LCTRL SLASH  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hm RCTRL SLASH  &hm RALT TILDE2  &hm RSHFT NON_US_BACKSLASH  &hm RGUI PIPE2         &trans
-&trans  &trans           &trans                      &kp NON_US_BACKSLASH  &kp TILDE2       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH        &trans                      &trans                 &trans
+&trans  &kp UNDERSCORE   &trans                      &kp NON_US_BACKSLASH  &kp TILDE2       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH        &trans                      &kp UNDERSCORE         &trans
                                                      &kp ESC               &kp SPACE        &kp SINGLE_QUOTE    &trans             &kp BACKSPACE    &kp DEL
             >;
         };
@@ -151,7 +156,7 @@
 &trans  &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4                      &kp N5                              &kp NUMBER_6     &kp N7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &kp LEFT_GUI    &kp LCTRL        &kp LALT      &kp LEFT_SHIFT                    &trans                              &trans           &kp LEFT_SHIFT   &kp LEFT_ALT  &kp LCTRL     &kp LEFT_GUI  &trans
 &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &rgb_ug RGB_COLOR_HSB(227,99,51)  &rgb_ug RGB_COLOR_HSB(123,99,51)    &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans        &trans        &trans        &trans
-                                         &kp ESC       &kp SPACE                         &kp TAB                             &kp RET          &trans           &kp DEL
+                                         &kp ESC       &kp SPACE                         &kp MINUS                           &kp RET          &trans           &kp DEL
             >;
         };
 
@@ -179,7 +184,7 @@
             bindings = <
 &trans  &trans        &trans        &trans     &trans          &trans    &redo         &paste          &copy           &cut          &undo            &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp CAPSLOCK  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans        &trans        &trans     &trans          &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
+&trans  &trans        &trans        &trans     &trans          &trans    &kp HOME      &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &trans
                                     &trans     &trans          &trans    &kp ENTER     &kp BACKSPACE   &kp DEL
             >;
 
