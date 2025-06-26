@@ -138,7 +138,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp DOUBLE_QUOTES           &kp POUND             &kp DOLLAR       &kp PERCENT         &kp CARET          &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS        &kp RIGHT_PARENTHESIS  &trans
 &trans  &hm LGUI TILDE2  &hm LSHFT NON_US_BACKSLASH  &hm LALT PIPE2        &hm LCTRL SLASH  &kp LEFT_BRACE      &kp RIGHT_BRACE    &hm RCTRL SLASH  &hm RALT TILDE2  &hm RSHFT NON_US_BACKSLASH  &hm RGUI PIPE2         &trans
-&trans  &kp UNDERSCORE   &trans                      &kp NON_US_BACKSLASH  &kp TILDE2       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH        &trans                      &kp UNDERSCORE         &trans
+&trans  &kp UNDERSCORE   &kp MINUS                   &kp NON_US_BACKSLASH  &kp TILDE2       &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp PIPE         &kp SLASH        &kp MINUS                   &kp UNDERSCORE         &trans
                                                      &kp ESC               &kp SPACE        &kp SINGLE_QUOTE    &trans             &kp BACKSPACE    &kp DEL
             >;
         };
@@ -154,9 +154,9 @@
 
             bindings = <
 &trans  &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4                      &kp N5                              &kp NUMBER_6     &kp N7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp LEFT_GUI    &kp LCTRL        &kp LALT      &kp LEFT_SHIFT                    &trans                              &trans           &kp LEFT_SHIFT   &kp LEFT_ALT  &kp LCTRL     &kp LEFT_GUI  &trans
+&trans  &kp EQUAL       &kp PLUS         &kp MINUS     &trans                            &trans                              &trans           &trans           &kp MINUS     &kp PLUS      &kp EQUAL     &trans
 &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &rgb_ug RGB_COLOR_HSB(227,99,51)  &rgb_ug RGB_COLOR_HSB(123,99,51)    &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans        &trans        &trans        &trans
-                                         &kp ESC       &kp SPACE                         &kp MINUS                           &kp RET          &trans           &kp DEL
+                                         &kp ESC       &kp SPACE                         &kp SQT                             &kp RET          &trans           &kp DEL
             >;
         };
 
