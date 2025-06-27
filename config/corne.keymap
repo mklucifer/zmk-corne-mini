@@ -156,7 +156,7 @@
 &trans  &kp NUMBER_1    &kp NUMBER_2     &kp NUMBER_3  &kp NUMBER_4                      &kp N5                              &kp NUMBER_6     &kp N7           &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &kp EQUAL       &kp PLUS         &kp MINUS     &trans                            &trans                              &trans           &trans           &kp MINUS     &kp PLUS      &kp EQUAL     &trans
 &trans  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans        &rgb_ug RGB_COLOR_HSB(227,99,51)  &rgb_ug RGB_COLOR_HSB(123,99,51)    &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &trans        &trans        &trans        &trans
-                                         &kp ESC       &kp SPACE                         &kp SQT                             &kp RET          &trans           &kp DEL
+                                         &kp ESC       &kp SPACE                         &kp AT_SIGN                         &kp RET          &trans           &kp DEL
             >;
         };
 
